@@ -1,12 +1,10 @@
-<h1>Homepage</h1>
+<h1>{{title}}</h1>
 
 <div class="article-list">
-  {{#each articles}}
+  {{#articles}}
     <article>
-      <a href="/article/{{slug}}">
-        <img src="/images/{{image}}" alt="" />
-      </a>
+      <a href="/article/{{slug}}"><img src="/images/{{image}}" alt="" /></a>
       <h2><a href="/article/{{slug}}">{{name}}</a></h2>
     </article>
-  {{/each}}
+  {{/articles}}
 </div>
